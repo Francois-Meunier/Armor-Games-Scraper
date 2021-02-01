@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mongodb_projet
+  mongodb_projet:
+    image: mongo:4.0.8
+    container_name: mongodb_projet
+    ports:
+      - '27017:27017'
