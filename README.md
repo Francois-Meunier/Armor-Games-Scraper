@@ -15,16 +15,16 @@
 **Armor Games Scraper** is an app that can be used to search more precisely for flash games on armor games. We wante to create this because when I was a kid, I used a lot armor games website to pplay flash games.
 But now when i want to look for a game that I played before the website tools for searching games is a bit crappy, like without date search or year search only name.
 
-This web app was created for a course, in our school **ESIEE PARIS**, named **Data Engineering** it is using:<br/>
-**Scrap**, a python package used to get data on choosen web page.<br/>
-**Flask**, a python framework made to easily create back-end with python.<br/>
-**Bootstrap**, a python tools kit that is used to develop front-end in python.<br/>
-**MongoDB**, a database technologie that we used to save all our scrap informations about each game
+This web app was created for a course, in our school **ESIEE PARIS**, named **Data Engineering** it is using:
+-**Scrap**, a python package used to get data on choosen web page.
+-**Flask**, a python framework made to easily create back-end with python.
+-**Bootstrap**, a python tools kit that is used to develop front-end in python.
+-**MongoDB**, a database technologie that we used to save all our scrap informations about each game
 
 We were three on this project:
-[Lorenzo PINAUD](https://www.linkedin.com/in/lorenzo-pinaud-10a8601b7/)
-[Francois MEUNIER](https://www.linkedin.com/in/fran%C3%A7ois-meunier-981194172/)
-[jules CHEVENET](https://www.linkedin.com/in/jules-chevenet-4441b4189/)
+-[Lorenzo PINAUD](https://www.linkedin.com/in/lorenzo-pinaud-10a8601b7/)
+-[Francois MEUNIER](https://www.linkedin.com/in/fran%C3%A7ois-meunier-981194172/)
+-[jules CHEVENET](https://www.linkedin.com/in/jules-chevenet-4441b4189/)
 
 # Needed tools
 
@@ -72,7 +72,7 @@ If you have any issues with the app, or you just want informations on the docume
 
 # Credits
 
-We would like to thanks our three teachers, to pass their knownledg and for the help they gave in this project:<br/>
-- **COURIVAUD Raphaël**<br/>
-- **KOUEK Jean-Baptiste**<b/>
+We would like to thanks our three teachers, to pass their knownledg and for the help they gave in this project:
+- **COURIVAUD Raphaël**
+- **KOUEK Jean-Baptiste**
 - **BERCHER Jean-François**
