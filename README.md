@@ -65,7 +65,7 @@ $ docker-compose up
 Mettre la réponse de cmd pour la réussite de l'installation de docker
 
 4.The final step, noww that the app is running is to onto it:
-                [Le site web](http://0.0.0.0:5000/)
+                [Armor games scraper](http://0.0.0.0:5000/)
 # Help
 
 If you have any issues with the app, or you just want informations on the documentation, ask one of us.
