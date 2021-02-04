@@ -6,8 +6,8 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-
-class ArticleItem(scrapy.Item):
+    
+class games_info_item(scrapy.Item):
     name = scrapy.Field()
     plays = scrapy.Field()
     ratings = scrapy.Field()
@@ -16,3 +16,12 @@ class ArticleItem(scrapy.Item):
     categories = scrapy.Field()
     developer = scrapy.Field()
     description = scrapy.Field()
+    link = scrapy.Field()
+    picture = scrapy.Field()
+    
+class games_link_item(scrapy.Item):
+    name = scrapy.Field()
+    plays = scrapy.Field()
+    ratings = scrapy.Field()
+    link = scrapy.Field()
+    picture = scrapy.Field()

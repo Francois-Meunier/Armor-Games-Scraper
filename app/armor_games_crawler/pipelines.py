@@ -1,4 +1,7 @@
+import scrapy.exporters
+
 from scrapy.exceptions import DropItem
+from scrapy.exporters import JsonItemExporter
 import pymongo
 
 
@@ -78,7 +81,7 @@ class MongoPipeline(object):
     collection_name = 'armor_games_infos'
 
     def open_spider(self, spider):
-        self.client = pymongo.MongoClient("mongodb://127.0.0.1:27017")
+        self.client = pymongo.MongoClient("mongodb",27017)
         self.db = self.client["jeux_infos_scrapper"]
         try:
             self.db[self.collection_name].drop()#suppresion de la collection pour quand on relance le scrap.
@@ -91,3 +94,17 @@ class MongoPipeline(object):
     def process_item(self, item, spider):
         self.db[self.collection_name].insert_one(dict(item))
         return item
+        
+class JsonPipeline(object):
+    def open_spider(self, spider):
+        self.file = open("data/jeux.json", 'wb')
+        self.exporter = JsonItemExporter(self.file, encoding='utf-8', ensure_ascii=False)
+        self.exporter.start_exporting()
+
+    def close_spider(self, spider):
+        self.exporter.finish_exporting()
+        self.file.close()
+
+    def process_item(self, item, spider):
+        self.exporter.export_item(item)
+        return item 

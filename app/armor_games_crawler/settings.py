@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for newscrawler project
+# Scrapy settings for armor_games_crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'newscrawler'
+BOT_NAME = 'armor_games_crawler'
 
-SPIDER_MODULES = ['newscrawler.spiders']
-NEWSPIDER_MODULE = 'newscrawler.spiders'
+SPIDER_MODULES = ['armor_games_crawler.spiders']
+NEWSPIDER_MODULE = 'armor_games_crawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'newscrawler (+http://www.yourdomain.com)'
+#USER_AGENT = 'armor_games_crawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False 
@@ -31,7 +31,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 
 
-ROTATING_PROXY_LIST_PATH = '../data/proxies.txt'
+ROTATING_PROXY_LIST_PATH = 'data/proxies.txt'
 
 USER_AGENTS = [
     ('Mozilla/5.0 (X11; Linux x86_64) '
@@ -58,14 +58,3 @@ USER_AGENTS = [
      'Chrome/63.0.3239.108 '
      'Safari/537.36'),  # chrome
 ]
-
-#faire transiter les items par les pipelines pour traiter les strings scrapper
-
-ITEM_PIPELINES = {
-     'newscrawler.pipelines.PublishedPipeline': 100,
-     'newscrawler.pipelines.NamePipeline' : 200,
-     'newscrawler.pipelines.RatingsPipeline': 300,
-     'newscrawler.pipelines.FavoritesPipeline': 400,
-     'newscrawler.pipelines.PlaysPipeline' : 500,
-     'newscrawler.pipelines.MongoPipeline': 600
- }

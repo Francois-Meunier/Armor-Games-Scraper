@@ -2,7 +2,7 @@
 FROM python:3.8
 
 #Define the directory of the application
-WORKDIR application
+WORKDIR /app
 
 # Copy the file to the Docker image
 COPY requirements.txt .
@@ -13,10 +13,9 @@ RUN pip install -r requirements.txt
 # Copy the application repository in the Docker image
 COPY /app .
 
-# Run the command to get the articles
-RUN cd newscrawler && \
-    scrapy crawl url_scrapper -o ./data/jeux_urls.json && \
-    scrapy crawl jeux_infos_scrapper
-
+# Run the command to get the games info
+RUN python crawl.py && \
+	python app.py
+	
 # The command to launch the app
 CMD ["python", "app.py"]
