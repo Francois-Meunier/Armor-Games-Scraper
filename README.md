@@ -22,9 +22,9 @@ This web app was created for a course, in our school **ESIEE PARIS**, named **Da
 **MongoDB**, a database technologie that we used to save all our scrap informations about each game
 
 We were three on this project:<br/>
--[Lorenzo PINAUD](https://www.linkedin.com/in/lorenzo-pinaud-10a8601b7/)<br/>
--[Francois MEUNIER](https://www.linkedin.com/in/fran%C3%A7ois-meunier-981194172/)<br/>
--[jules CHEVENET](https://www.linkedin.com/in/jules-chevenet-4441b4189/)
+[Lorenzo PINAUD](https://www.linkedin.com/in/lorenzo-pinaud-10a8601b7/)<br/>
+[Francois MEUNIER](https://www.linkedin.com/in/fran%C3%A7ois-meunier-981194172/)<br/>
+[jules CHEVENET](https://www.linkedin.com/in/jules-chevenet-4441b4189/)
 
 # Needed tools
 
@@ -53,10 +53,6 @@ You need **Docker** and **Docker Compose** to run the app, follow this feww step
 
 1.Open your shell and move to the project directory
 2.Launch the docker container with the command:
-
-
-1. Navigate your shell into the project directory
-2. Launch the following command
 ```bash
 $ docker-compose up
 ```
