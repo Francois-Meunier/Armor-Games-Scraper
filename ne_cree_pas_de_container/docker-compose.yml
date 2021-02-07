@@ -3,6 +3,7 @@ version: "3"
 services:
   web:
     build: .
+    container_name: armor_web
     ports:
       - '5000:5000'
     depends_on:
@@ -10,6 +11,6 @@ services:
 
   mongodb_project:
     image: mongo:4.0.8
-    container_name: mongodb_project
+    container_name: armor_mongodb
     ports:
       - '27017:27017'
