@@ -61,9 +61,10 @@ You need **Docker** and **Docker Compose** to run the app, follow this feww step
 $ docker-compose up
 ```
 3.Then check if you got this output:
-
-Mettre la réponse de cmd pour la réussite de l'installation de docker
-
+ de docker
+```bash
+Creating app_web_1 ... done
+```
 4.The final step, noww that the app is running is to onto it:
                 [Armor games scraper](http://0.0.0.0:5000/)
                 
@@ -128,10 +129,9 @@ So on the 1400 games on the site only 400 were scraped,even while changing the d
 
 ## App
 
-The app is in two pages:
+They are differents pages about Armor games, you can surf on the differents pages to see some statistiques about games.
 
-The first one is used to search for games using name date.
-The second is graphic analyse, on the games, such as ratings by plays, or ratings by tag.
+
 
 # Help
 
