@@ -95,23 +95,32 @@ We got one pipelines for each item, like that we can change the date to be able 
 pipelines.py:
 
 NamePipeline = used to clean the space at the end of each name. 
+
 PublishedPipeline = used to change the date format using a dict created to change the month in number.
+
 RatingsPipeline = used to change the rating, by cleaning the comma.
+
 FavoritesPipeline = used to change the number of time the game was define as favorite, by cleaning the comma.
+
 PlaysPipeline = used to change the number of times the game was played, by cleaning the comma.
+
 MongoPipeline = was created to load the data in the mongodb but was canceled, while it didn't work.
 
 
 clean_comma = function to clear comma.
+
 clean_space = function to clear space.
 
 The files items.py:
+
 Games_Infos_Item = item used in the second crawler to get all the infos such as tags, description etc...
+
 Games_Link_Item = item used for the first crawler used to get the link of each game and the pictures of each game.
 
 finaly settings.py:
 
 USER_AGENTS = used to change the user agent while scraping.
+
 DOWNLOADER_MIDDLEWARES = to define the parameters of user agent change.
 
 To improve the number of data scraped, we were trying to use proxy change, but the implementation didn't change a thing.
