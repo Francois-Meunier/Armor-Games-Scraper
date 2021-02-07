@@ -13,9 +13,5 @@ RUN pip install -r requirements.txt
 # Copy the application repository in the Docker image
 COPY /app .
 
-# Run the command to get the games info
-RUN python crawl.py && \
-	python app.py
-	
 # The command to launch the app
 CMD ["python", "app.py"]
