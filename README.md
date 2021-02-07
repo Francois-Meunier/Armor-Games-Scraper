@@ -62,6 +62,16 @@ Mettre la réponse de cmd pour la réussite de l'installation de docker
 
 4.The final step, noww that the app is running is to onto it:
                 [Armor games scraper](http://0.0.0.0:5000/)
+                
+                
+Si vous voulez mettre à jour le fichier infos pour les jeux il faudra dans un terminal python aller dans armor_games_crawler et taper ces commandes
+
+```
+move newscrawler\spiders\spyder_games_infos.py temporaire 
+scrapy crawl url_scrapper -o data/jeux_urls.json
+move temporaire\spyder_games_infos.py newscrawler\spiders
+scrapy crawl jeux_infos_scrapper -o data/jeux_infos.json
+```
 # Help
 
 If you have any issues with the app, or you just want informations on the documentation, ask one of us.
