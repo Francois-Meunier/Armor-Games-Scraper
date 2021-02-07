@@ -64,7 +64,7 @@ Mettre la réponse de cmd pour la réussite de l'installation de docker
                 [Armor games scraper](http://0.0.0.0:5000/)
                 
                 
-Si vous voulez mettre à jour le fichier infos pour les jeux il faudra dans un terminal python aller dans armor_games_crawler et taper ces commandes
+Si vous voulez mettre à jour le fichier infos pour les jeux il faudra dans un terminal python aller dans armor_games_crawler et taper ces commandes(ne pas oublier de supprimer les deux json, pour ne pas réécrire à la suite)
 
 ```
 move newscrawler\spiders\spyder_games_infos.py temporaire 
