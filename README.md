@@ -66,7 +66,7 @@ $ docker-compose up -d --build
 Creating app_web_1 ... done
 ```
 4.The final step, noww that the app is running is to onto it:
-                [Armor games scraper](http://0.0.0.0:5000/)
+                [Armor games scraper](http://127.0.0.1:5000/)
                 
 
 
