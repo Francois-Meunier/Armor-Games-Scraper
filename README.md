@@ -58,7 +58,7 @@ You need **Docker** and **Docker Compose** to run the app, follow this feww step
 1.Open your shell and move to the project directory
 2.Launch the docker container with the command:
 ```bash
-$ docker-compose up
+$ docker-compose up -d --build
 ```
 3.Then check if you got this output:
  de docker
