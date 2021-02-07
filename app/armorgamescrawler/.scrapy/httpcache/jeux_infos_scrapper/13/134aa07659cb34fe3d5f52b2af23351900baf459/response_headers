@@ -1,0 +1,18 @@
+Date: Tue, 26 Jan 2021 15:58:59 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: __cfduid=dff77175e5e01165a2d0d1759271f45191611676738; expires=Thu, 25-Feb-21 15:58:58 GMT; path=/; domain=.armorgames.com; HttpOnly; SameSite=Lax
+Content-Security-Policy: frame-ancestors 'self', upgrade-insecure-requests
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=300, public
+Vary: Cookie,Accept-Encoding
+P3P: policyref="/w3c/p3p.xml", CP="CAO DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+X-Cache: Miss from cloudfront
+Via: 1.1 c07320a6bd3c3139ec09f5dbe085c0ef.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CDG53-C1
+X-Amz-Cf-Id: pw11JYHPs9QwrVssjuUxK7u09mPolB9OGhOzWAcYyijxwV5Ao1PpYQ==
+Cf-Cache-Status: EXPIRED
+Cf-Request-Id: 07e1047d110000ee2362a85000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 617b7041bd0cee23-CDG
+Content-Encoding: br

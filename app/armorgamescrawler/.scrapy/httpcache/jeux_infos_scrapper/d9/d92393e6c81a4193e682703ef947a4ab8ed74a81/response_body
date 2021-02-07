@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ooops! 429 Too Many Requests</title>
+<style>
+        * {
+            background-color: #f0f0f0;
+            color: #333333;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 30px auto;
+        }
+
+        .content {
+            margin: 50px auto 0 auto;
+        }
+
+        p {
+            margin: 30px auto 15px auto;
+            max-width: 500px;
+        }
+
+        ul {
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+
+        ul > li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+<a href="/"><img src="/images/logo.png" alt="Armor Games" width="250" height="144" /></a>
+<h1>429: Too Many Requests!</h1>
+<p>Your IP address has been rate limited due to making too many requests. Please wait a few minutes and try your request again.</p>
+<p>This typically only happens to bots, so if you encountered this page as a normal user please <a href="https://support.armorgames.com">contact support</a> so we can investigate the issue.</p>
+<a href="/"><img src="/images/sad-sushi-cat.png" alt="Sad Sushi Cat" width="300" height="232" /></a>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/games">Games</a></li>
+<li><a href="https://support.armorgames.com">Support</a></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Date: Tue, 26 Jan 2021 15:21:47 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy: frame-ancestors 'self', upgrade-insecure-requests
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=300, public
+Vary: Cookie,Accept-Encoding
+P3P: policyref="/w3c/p3p.xml", CP="CAO DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+X-Cache: Miss from cloudfront
+Via: 1.1 e2dc4178fd5d89ed6c6e3cd0e2e53fa7.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CDG53-C1
+X-Amz-Cf-Id: r0sy4PNqE_E8dChGX-FdoTjDlhezDy3RqR2htsTe6wnWASMKyS7Yiw==
+Cf-Cache-Status: MISS
+Cf-Request-Id: 07e0e271950000ee2f6c1bc000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 617b39c8e961ee2f-CDG
+Content-Encoding: br

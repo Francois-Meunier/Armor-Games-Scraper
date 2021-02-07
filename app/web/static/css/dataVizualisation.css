@@ -1,0 +1,9 @@
+body {
+    padding-top: 50px;
+  }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}

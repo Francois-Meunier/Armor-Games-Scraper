@@ -1,0 +1,14 @@
+Date: Tue, 26 Jan 2021 16:07:18 GMT
+Content-Type: text/html; charset=UTF-8
+Retry-After: 1.8314998149872
+Vary: Accept-Encoding
+P3P: policyref="/w3c/p3p.xml", CP="CAO DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT"
+X-Cache: Error from cloudfront
+Via: 1.1 47140f009c2bd3561cd6dde4003253e3.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CDG53-C1
+X-Amz-Cf-Id: j3aGjwcxlBKYNI2iRs0i1Iq5wEzPn1nRGOAks55sd8DkOQCI1V5wBg==
+Cf-Cache-Status: BYPASS
+Cf-Request-Id: 07e10c1adc0000ee54ec008000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 617b7c715979ee54-CDG
