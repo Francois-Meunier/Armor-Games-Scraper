@@ -43,13 +43,13 @@ def plot_data(cursor,twoCat,color):
     return(f)
 
 
-col_list = ["name","plays","favorites","ratings","lien","image"]
+col_list = ["name","plays","favorites","rating","link","picture"]
 
 plays = data_top(collection.find().sort([("plays",-1)]).limit(15), col_list)
 
 fav = data_top(collection.find().sort([("favorites",-1)]).limit(15), col_list)
 
-ratings = data_top(collection.find().sort([("ratings",-1)]).limit(15), col_list)
+rating = data_top(collection.find().sort([("rating",-1)]).limit(15), col_list)
 
 
 @app.route('/')
@@ -66,7 +66,7 @@ def plot_png():
 
 @app.route('/plot2.png')
 def plot2_png():
-    fig = plot_data(collection.find(),['ratings','plays'], 'blue')
+    fig = plot_data(collection.find(),['rating','plays'], 'blue')
     output = io.BytesIO()
     FigureCanvas(fig).print_png(output)
     return Response(output.getvalue(), mimetype='image/png')
@@ -75,7 +75,7 @@ def plot2_png():
 @app.route('/totalStats', methods=("POST", "GET"))
 def totalStats():
 
-    return render_template('totalStats.html',  tables=[plays.to_html(classes='plays'), ratings.to_html(classes='ratings'), fav.to_html(classes='fav')])
+    return render_template('totalStats.html',  tables=[plays.to_html(classes='plays'), rating.to_html(classes='rating'), fav.to_html(classes='fav')])
 
 
 @app.route('/dataVizualisation')
