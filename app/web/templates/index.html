@@ -23,10 +23,11 @@ Home
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="{{ url_for('search') }}"><i class="fa fa-search"></i> Search</a></li>
             <li><a href="{{ url_for('totalStats') }}"><i class="fa fa-table"></i> Total Statistics</a></li>
             <li><a href="{{ url_for('dataVizualisation') }}"><i class="fa fa-table"></i> Data Vizualisation</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 

@@ -9,6 +9,9 @@ Search
 <link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}">
 <link rel='stylesheet' href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css')}}">
 <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -23,6 +26,7 @@ Search
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="{{ url_for('index') }}"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="{{ url_for('search') }}"><i class="fa fa-search"></i> Search</a></li>
             <li><a href="{{ url_for('totalStats') }}"><i class="fa fa-table"></i> Total Statistics</a></li>
             <li class="active"><a href="dataVizualisation"><i class="fa fa-table"></i> Data Vizualisation</a></li>
           </ul>
@@ -30,23 +34,30 @@ Search
       </div>
     </nav>
     
-    <div class="page">
+    <div class="home">
       <h3>Graphs about games</h3>
       <br>
-      <h4>Favorites and ratings in function of the plays</h4>
+      <h4>Favorites in function of the plays</h4>
 
-      <figure class="half">
-        <table>
-          <tr>
-            <td>
-              <img style="width:600px;" src="/plot.png">
-            </td>
-            <td>
-              <img style="width:600px;" src="/plot2.png">
-            </td>
-          </tr>
-        </table>
-      </figure>
-    </div>
+      <div class="container">
+        <div class="chart" id="chart">
+            <script>
+                var graphs = {{plot|safe}};
+                Plotly.plot('chart', graphs, {});   
+            </script>
+        </div>
+  
+
+      <h4>Favorites in function of the plays</h4>
+    
+      <div class="container">
+          <div class="chart" id="chart2">
+              <script>
+                  var graphs = {{plot2|safe}};
+                  Plotly.plot('chart2', graphs, {});
+              </script>
+          </div>
+      </div>
+    </div> 
 
 {% endblock %}
